@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 100px;
+    text-align: center;
+    box-sizing: content-box;
+    justify-content: center;
+
+
+}
+img{
+    opacity: 10;
+    border: 10px rgb(255, 0, 0) solid;
+    text-align: center;
+    box-sizing: content-box;
+    justify-content: center;
+    width:fit-content;
+    height:min-content;
+}
+button {
+    display: block;
+    margin: 100px 0;
+    
+}
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

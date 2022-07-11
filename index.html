@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donut Clicker</title>
-  </head>
-  <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
-  </body>
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <title>Donut-Clicker</title>
+</head>
+
+<body>
+  <div class="container"></div>
+  <script type="text/javascript">
+      function swapImage(){
+    if (document.getElementById("pic").src.endsWith('donut-blue.png') == true)  //Comparison
+    { 
+         document.getElementById("pic").src = "donut-white.png"; //assignment  
+
+     } 
+     else if (document.getElementById("pic").src.endsWith('donut-white.png') == true) 
+     { 
+        document.getElementById("pic").src = "donut-red.png";                 
+    }
+    else if (document.getElementById("pic").src.endsWith('donut-red.png') == true) 
+     { 
+        document.getElementById("pic").src = "donut-pink.png";                 
+    }
+    else if (document.getElementById("pic").src.endsWith('donut-pink.png') == true) 
+     { 
+        document.getElementById("pic").src = "donut.png";                 
+    }
+    else if (document.getElementById("pic").src.endsWith('donut.png') == true) 
+     { 
+        document.getElementById("pic").src = "donut-blue.png";                 
+    }
+}
+  </script>
+<a href="#" class="donutCounter">
+
+<img src="donut-blue.png" id="pic" onclick="swapImage() " style="background-color:black;"/> </a>
+
+<p>Total Clicks</p>
+    <h1 class="donutDisplay">(..)</h1>
+    <p>Total Auto Clickers</p>
+    <h1 class="autoClicker">(..)</h1>
+    <input type="button" value="Auto Clicker" class="buyAutoClicker">
+    <input type="button" value="Auto Clicker x 5" class="buyAutoClicker">
+    <input type="button" value="Auto Clicker x 10" class="buyAutoClicker">
+    <p></p>
+    <input type="button" value="Reset" class="reset">
+
+
+  <script src="./index.js"></script>
+</body>
+
 </html>
